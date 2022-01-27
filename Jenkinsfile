@@ -9,7 +9,7 @@ pipeline {
         stage('Make files') {
             steps {
                 sh 'touch ~/jenkins-tutorial-test/file1.txt'
-                dir('~/jenkins-tutorial-test') {
+                dir('jenkins-tutorial-test') {
                     sh 'touch file2.txt'
                 }
             }
